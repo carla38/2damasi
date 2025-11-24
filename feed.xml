@@ -1,190 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
-    <title>PaginaAsi</title>
+    <title>DocumentacionASI</title>
     <link href="https://carla38.github.io/2damasi/feed.xml" rel="self" />
     <link href="https://carla38.github.io/2damasi" />
-    <updated>2025-09-26T01:01:15+02:00</updated>
+    <updated>2025-11-24T23:00:23+01:00</updated>
     <author>
-        <name>carla</name>
+        <name>Carla</name>
     </author>
     <id>https://carla38.github.io/2damasi</id>
 
     <entry>
-        <title>Golden Retriever</title>
+        <title>Configuración Raspberry Pi y Mac Mini</title>
         <author>
-            <name>carla</name>
+            <name>Carla</name>
         </author>
-        <link href="https://carla38.github.io/2damasi/golden-retriever.html"/>
-        <id>https://carla38.github.io/2damasi/golden-retriever.html</id>
-        <media:content url="https://carla38.github.io/2damasi/media/posts/5/golden-retriever-istock.jpg" medium="image" />
+        <link href="https://carla38.github.io/2damasi/configuracion-raspberry-pi-y-mac-mini.html"/>
+        <id>https://carla38.github.io/2damasi/configuracion-raspberry-pi-y-mac-mini.html</id>
 
-        <updated>2025-09-25T23:59:43+02:00</updated>
+        <updated>2025-11-24T22:45:19+01:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://carla38.github.io/2damasi/media/posts/5/golden-retriever-istock.jpg" alt="" />
-                    Región Escocia Tamaño 51 a 61 cm Peso Machos: 28 a 33 kg&hellip;
+                    Configuración Raspberry Pi y Mac Mini Índice 1.- Introducción 2.- Configuración Raspberry Pi 3.- Configuración Mac Mini 1.- Introducción El objetivo de esta práctica será documentar el proceso seguido para configurar una Raspberry Pi y un Mac Mini en los equipos del taller. Se acompañará&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <p><img src="https://carla38.github.io/2damasi/media/posts/5/golden-retriever-istock.jpg" class="type:primaryImage" alt="" /></p>
-                <table style="border-collapse: collapse; width: 106.695%; height: 284.2px; background-color: #c2e0f4; border-color: #34495e;" border="1">
-<tbody>
-<tr style="height: 55.5375px;">
-<td class="align-center" style="width: 47.6836%; height: 55.5375px;">Región</td>
-<td class="align-center" style="width: 52.2894%; height: 55.5375px;">Escocia</td>
-</tr>
-<tr style="height: 55.5375px;">
-<td class="align-center" style="width: 47.6836%; height: 55.5375px;">Tamaño</td>
-<td class="align-center" style="width: 52.2894%; height: 55.5375px;">51 a 61 cm</td>
-</tr>
-<tr style="height: 86.55px;">
-<td class="align-center" style="width: 47.6836%; height: 86.55px;">Peso</td>
-<td class="align-center" style="width: 52.2894%; height: 86.55px;">Machos: 28 a 33 kg<br>Hembras: 26 a 30 kg</td>
-</tr>
-<tr style="height: 86.575px;">
-<td class="align-center" style="width: 47.6836%; height: 86.575px;">Carácter</td>
-<td class="align-center" style="width: 52.2894%; height: 86.575px;">Dócil, inteligente, bondadoso, amigable, fiel, confiado y celoso</td>
-</tr>
-</tbody>
-</table>
-<p>El golder retriever es un hábil perro de caza con aptitudes para el rastreo. Posee una disposición amigable y una actitud que lo ha convertido en una de las razas familiares más populares.</p>
-<p>Son muy inteligentes y generalmente muy receptivos al entrenamiento. Son fieles a sus dueños y viven para servir a sus familias.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Caniche</title>
-        <author>
-            <name>carla</name>
-        </author>
-        <link href="https://carla38.github.io/2damasi/caniche.html"/>
-        <id>https://carla38.github.io/2damasi/caniche.html</id>
-        <media:content url="https://carla38.github.io/2damasi/media/posts/4/caniche-perro.jpg" medium="image" />
-
-        <updated>2025-09-25T23:53:52+02:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://carla38.github.io/2damasi/media/posts/4/caniche-perro.jpg" alt="" />
-                    Región Francia, Alemania Tamaño 24-45 cm según la variedad Peso 27-32 kg&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://carla38.github.io/2damasi/media/posts/4/caniche-perro.jpg" class="type:primaryImage" alt="" /></p>
-                <table class="align-center" style="border-collapse: collapse; width: 99.7151%; height: 270px; background-color: #c2e0f4; border-color: #34495e;" border="1">
-<tbody>
-<tr style="height: 48.35px;">
-<td class="align-center" style="width: 50.057%; height: 48.35px;">Región</td>
-<td class="align-center" style="width: 49.9144%; height: 48.35px;">Francia, Alemania</td>
-</tr>
-<tr style="height: 48.35px;">
-<td class="align-center" style="width: 50.057%; height: 48.35px;">Tamaño</td>
-<td class="align-center" style="width: 49.9144%; height: 48.35px;">24-45 cm según la variedad</td>
-</tr>
-<tr style="height: 48.35px;">
-<td class="align-center" style="width: 50.057%; height: 48.35px;">Peso</td>
-<td class="align-center" style="width: 49.9144%; height: 48.35px;">27-32 kg</td>
-</tr>
-<tr style="height: 48.35px;">
-<td class="align-center" style="width: 50.057%; height: 48.35px;">Carácter</td>
-<td class="align-center" style="width: 49.9144%; height: 48.35px;">
-<p>Juguetón, inteligente, fiel, alerta y cazador.</p>
-</td>
-</tr>
-</tbody>
-</table>
-<p>El<strong> caniche</strong> fue un perro cobrador de aguas hasta el Renacimiento: recuperaban las presas ya cazadas que habían caído al agua, como patos y cisnes. Hoy en día se les encuentra frecuentemente en las exposiciones caninas de belleza. Existen cuatro variedades: grande, mediano, enano y toy.</p>
-<p>Los caniches no solo son apariencia; también son reconocidos como perros muy inteligentes, generalmente catalogados como los segundos más inteligentes después de los <a href="https://carla38.github.io/2damasi/border-collie.html">Border Collie</a>.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Pastor Alemán</title>
-        <author>
-            <name>carla</name>
-        </author>
-        <link href="https://carla38.github.io/2damasi/pastor-aleman.html"/>
-        <id>https://carla38.github.io/2damasi/pastor-aleman.html</id>
-        <media:content url="https://carla38.github.io/2damasi/media/posts/3/Pastor_aleman_a.jpg" medium="image" />
-
-        <updated>2025-09-25T23:39:06+02:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://carla38.github.io/2damasi/media/posts/3/Pastor_aleman_a.jpg" alt="PastorAleman" />
-                    Región Alemania Tamaño Macho: 60 a 65 cm. Hembra: 55-60 cm El&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://carla38.github.io/2damasi/media/posts/3/Pastor_aleman_a.jpg" class="type:primaryImage" alt="PastorAleman" /></p>
-                <table style="border-collapse: collapse; width: 100%; background-color: #c2e0f4; border-color: #34495E;" border="1">
-<tbody>
-<tr>
-<td class="align-center" style="width: 47.2048%; height: 56.6375px;">Región</td>
-<td class="align-center" style="width: 52.7667%; height: 56.6375px;">Alemania</td>
-</tr>
-<tr>
-<td class="align-center" style="width: 47.2048%; height: 122px;">Tamaño</td>
-<td class="align-center" style="width: 52.7667%; height: 122px;">
-<p>Macho: 60 a 65 cm. Hembra: 55-60 cm</p>
-</td>
-</tr>
-<tr>
-<td class="align-center" style="width: 47.2048%; height: 88.2625px;">Tipo</td>
-<td class="align-center" style="width: 52.7667%; height: 88.2625px;">Macho: 30-40 kg. Hembra: 22-32 kg</td>
-</tr>
-<tr>
-<td class="align-center" style="width: 47.2048%; height: 88.3px;">Carácter</td>
-<td class="align-center" style="width: 52.7667%; height: 88.3px;">Temperamento equilibrado, con nervios firmes, seguro de sí mismo, desenvuelto</td>
-</tr>
-</tbody>
-</table>
-<p>El <strong>pastor alemán</strong> forma parte del grupo de pastoreo, ya que fueron perros desarrollados originalmente para reunir y vigilar ganado. Desde entonces, sin embargo, gracias a su fuerza, inteligencia,​ capacidad de entrenamiento y obediencia​ los pastores alemanes de todo el mundo son a menudo la raza preferida para muchos otros tipos de trabajo, como son: perro policía, perro militar, perro guardián, guía de ciegos, animal de rescate, y otros.</p>
-<p>Los pastores alemanes son tan inteligentes que pueden aprender una nueva orden en menos de cinco repeticiones . Son una raza inteligente, con ganas de complacer y que les encanta demostrar lo buenos que son como oyentes.</p>
-            ]]>
-        </content>
-    </entry>
-    <entry>
-        <title>Border Collie</title>
-        <author>
-            <name>carla</name>
-        </author>
-        <link href="https://carla38.github.io/2damasi/border-collie.html"/>
-        <id>https://carla38.github.io/2damasi/border-collie.html</id>
-        <media:content url="https://carla38.github.io/2damasi/media/posts/1/border-collie-im-grass.webp" medium="image" />
-
-        <updated>2025-09-25T22:46:11+02:00</updated>
-            <summary>
-                <![CDATA[
-                        <img src="https://carla38.github.io/2damasi/media/posts/1/border-collie-im-grass.webp" alt="BorderCollie" />
-                    Región Inglaterra, Escocia Tamaño Machos: 40-50 cm Hembras: 48-46 cm Peso Machos:&hellip;
-                ]]>
-            </summary>
-        <content type="html">
-            <![CDATA[
-                    <p><img src="https://carla38.github.io/2damasi/media/posts/1/border-collie-im-grass.webp" class="type:primaryImage" alt="BorderCollie" /></p>
-                <table style="border-collapse: collapse; width: 99.7151%; height: 316px; background-color: #c2e0f4; border-color: #34495e; border-style: solid;" border="1">
-<tbody>
-<tr style="height: 61.2px;">
-<td class="align-center" style="width: 47.8443%; height: 61.2px;">Región</td>
-<td class="align-center" style="width: 52.1289%; height: 61.2px;">Inglaterra, Escocia</td>
-</tr>
-<tr style="height: 95.3875px;">
-<td class="align-center" style="width: 47.8443%; height: 95.3875px;">Tamaño</td>
-<td class="align-center" style="width: 52.1289%; height: 95.3875px;">Machos: 40-50 cm <br>Hembras: 48-46 cm</td>
-</tr>
-<tr style="height: 95.3875px;">
-<td class="align-center" style="width: 47.8443%; height: 95.3875px;">Peso</td>
-<td class="align-center" style="width: 52.1289%; height: 95.3875px;">Machos: 14-20 kg<br>Hembras: 12-19 kg</td>
-</tr>
-<tr style="height: 61.225px;">
-<td class="align-center" style="width: 47.8443%; height: 61.225px;">Carácter</td>
-<td class="align-center" style="width: 52.1289%; height: 61.225px;">Inteligente, equilibrado, muy fiel y activo</td>
-</tr>
-</tbody>
-</table>
-<p class="align-left">El <strong>border collie</strong> es una raza de perro de trabajo incluido dentro de la denominación Collie. La raza surgió en la frontera entre Escocia e Inglaterra como perro pastor, sobre todo para trabajar con rebaños de ovejas. El border collie fue seleccionado sobre todo para enfatizar su inteligencia y su obediencia; debido a esto, son uno de los perros pastores más populares en la actualidad.<br>El border collie está considerado como un perro extremadamente inteligente, lleno de energía, acrobático y atlético, y generalmente compiten con gran éxito en concursos de pastoreo y otros deportes caninos. Son generalmente descritos como la raza de perro doméstico más inteligente.</p>
+                <p><span style="color: #000000;"><strong><span style="text-decoration: underline;">Configuración Raspberry Pi y Mac Mini</span> </strong></span></p>
+<p><span style="text-decoration: underline;"><strong>Índice</strong></span></p>
+<p><span style="font-weight: 400;">1.- Introducción</span></p>
+<p><span style="font-weight: 400;">2.- Configuración Raspberry Pi</span></p>
+<p><span style="font-weight: 400;">3.- Configuración Mac Mini</span></p>
+<p> </p>
+<p><br><span style="text-decoration: underline;"><strong>1.- Introducción</strong></span></p>
+<p><span style="font-weight: 400;">El objetivo de esta práctica será documentar el proceso seguido para configurar una Raspberry Pi y un Mac Mini en los equipos del taller. Se acompañará de imágenes para mostrar los pasos que se han seguido.</span></p>
+<p> </p>
+<p><span style="text-decoration: underline;"><span style="color: #000000; text-decoration: underline;"><strong>2.- Configuración Raspberry Pi</strong></span></span></p>
+<p><span style="font-weight: 400;">Primero comenzamos con la configuración de la Raspberry Pi, conectando el teclado al equipo. Lo primero que aparecerá será una pantalla indicando que habrá que realizar unas configuraciones antes de comenzar a usar el escritorio de Raspberry Pi.</span></p>
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/1/IMG-20251113-WA0005.jpg" alt="" width="586" height="330" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0005-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0005-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0005-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0005-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0005-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0005-2xl.jpg 1920w"></figure>
+<p> </p>
+<p><span style="font-weight: 400;">El proceso de configuración ha sido el siguiente: Primero elegimos el país, idioma y zona horaria. Después creamos el usuario, con el nombre y contraseña indicados en el aula. Elegimos la red WiFi. En nuestro caso elegimos instalar Chromium como navegador por defecto.</span></p>
+<p><span style="font-weight: 400;">Tras este proceso, habrá que actualizar el software.</span></p>
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/1/IMG-20251113-WA0006-2.jpg" alt="" width="578" height="325" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0006-2-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0006-2-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0006-2-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0006-2-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0006-2-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0006-2-2xl.jpg 1920w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/1/IMG-20251113-WA0008-2.jpg" alt="" width="576" height="324" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0008-2-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0008-2-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0008-2-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0008-2-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0008-2-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0008-2-2xl.jpg 1920w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/1/IMG-20251113-WA0009.jpg" alt="" width="578" height="325" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0009-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0009-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0009-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0009-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0009-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0009-2xl.jpg 1920w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/1/IMG-20251113-WA0011.jpg" alt="" width="576" height="324" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0011-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0011-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0011-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0011-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0011-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0011-2xl.jpg 1920w"></figure>
+<figure class="post__image align-left"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/1/IMG-20251113-WA0013.jpg" alt="" width="580" height="326" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0013-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0013-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0013-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0013-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0013-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0013-2xl.jpg 1920w"></figure>
+<p> </p>
+<p><span style="font-weight: 400;">Al acabar esta descarga, la Raspberry Pi queda lista para usar.</span></p>
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/1/IMG-20251113-WA0014-2.jpg" alt="" width="579" height="326" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0014-2-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0014-2-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0014-2-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0014-2-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0014-2-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0014-2-2xl.jpg 1920w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/1/IMG-20251113-WA0015-2.jpg" alt="" width="578" height="325" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0015-2-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0015-2-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0015-2-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0015-2-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0015-2-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0015-2-2xl.jpg 1920w"></figure>
+<p><br><br></p>
+<p><span style="text-decoration: underline;"><strong>3.- Configuración Mac Mini</strong></span></p>
+<p><span style="font-weight: 400;">Para configurar el Mac Mini desconectamos la Raspberry y usamos otro teclado para conectarlo al Mac Mini. </span></p>
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/1/IMG-20251113-WA0017.jpg" alt="" width="610" height="343" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0017-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0017-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0017-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0017-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0017-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0017-2xl.jpg 1920w"></figure>
+<p> </p>
+<p><span style="font-weight: 400;">El proceso de configuración va a ser muy similar al anterior. Primero nos preguntarán por el idioma y la región, además de otras opciones de personalización.</span></p>
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/1/IMG-20251113-WA0022-2.jpg" alt="" width="606" height="341" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0022-2-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0022-2-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0022-2-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0022-2-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0022-2-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0022-2-2xl.jpg 1920w"></figure>
+<p><span style="font-weight: 400;">Obviando algunas opciones de personalización extra, como ubicación, privacidad o cuenta Apple, y la aceptación de Términos y Condiciones, podremos seleccionar la red WiFi y crear nuestro usuario, que será igual al del apartado anterior.</span></p>
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/1/IMG-20251113-WA0025-2.jpg" alt="" width="610" height="343" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0025-2-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0025-2-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0025-2-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0025-2-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0025-2-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0025-2-2xl.jpg 1920w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/1/IMG-20251113-WA0032-2.jpg" alt="" width="608" height="342" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0032-2-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0032-2-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0032-2-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0032-2-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0032-2-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0032-2-2xl.jpg 1920w"></figure>
+<p> </p>
+<p><span style="font-weight: 400;">Tras esto habremos configurado el Mac Mini. Tras haber acabado, conectamos a través de Bluetooth el teclado y ratón POP. Además instalamos LM Studio para hacer unas primeras pruebas.</span></p>
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/1/IMG-20251113-WA0040.jpg" alt="" width="613" height="345" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0040-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0040-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0040-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0040-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0040-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0040-2xl.jpg 1920w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/1/IMG-20251113-WA0042.jpg" alt="" width="613" height="345" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0042-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0042-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0042-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0042-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0042-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/1/responsive/IMG-20251113-WA0042-2xl.jpg 1920w"></figure>
             ]]>
         </content>
     </entry>
