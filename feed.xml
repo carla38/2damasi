@@ -3,12 +3,113 @@
     <title>DocumentacionASI</title>
     <link href="https://carla38.github.io/2damasi/feed.xml" rel="self" />
     <link href="https://carla38.github.io/2damasi" />
-    <updated>2025-11-24T23:00:23+01:00</updated>
+    <updated>2025-12-04T12:14:48+01:00</updated>
     <author>
         <name>Carla</name>
     </author>
     <id>https://carla38.github.io/2damasi</id>
 
+    <entry>
+        <title>Configuración Inicial Jetson Nano</title>
+        <author>
+            <name>Carla</name>
+        </author>
+        <link href="https://carla38.github.io/2damasi/configuracion-inicial-jetson-nano.html"/>
+        <id>https://carla38.github.io/2damasi/configuracion-inicial-jetson-nano.html</id>
+
+        <updated>2025-12-04T11:15:39+01:00</updated>
+            <summary>
+                <![CDATA[
+                    Configuración Inicial Jetson Nano - Carla Arribas Muñoz Para esta práctica documentaré el proceso seguido para la configuración de la Jetson Orin Nano en el dispositivo del aula. Lo primero antes de conectarla al ordenador ha sido introducir una tarjeta SD en la Jetson. Tras&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p class="align-center"><strong><span style="text-decoration: underline;">Configuración Inicial Jetson Nano - Carla Arribas Muñoz</span></strong></p>
+<p>Para esta práctica documentaré el proceso seguido para la configuración de la Jetson Orin Nano en el dispositivo del aula.</p>
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/2/IMG-20251120-WA0002.jpg" alt="" width="526" height="296" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0002-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0002-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0002-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0002-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0002-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0002-2xl.jpg 1920w"></figure>
+<p>Lo primero antes de conectarla al ordenador ha sido introducir una tarjeta SD en la Jetson. Tras ello hemos podido conectarla y comenzar con la configuración.</p>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 49.943%;">
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/2/IMG-20251120-WA0004-2.jpg" alt="" width="274" height="271" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0004-2-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0004-2-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0004-2-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0004-2-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0004-2-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0004-2-2xl.jpg 1920w"></figure>
+</td>
+<td style="width: 49.943%;">
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/2/IMG-20251120-WA0003.jpg" alt="" width="1599" height="899" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0003-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0003-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0003-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0003-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0003-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0003-2xl.jpg 1920w"></figure>
+</td>
+</tr>
+<tr>
+<td style="width: 49.943%;">
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/2/IMG-20251120-WA0005.jpg" alt="" width="1599" height="899" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0005-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0005-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0005-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0005-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0005-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0005-2xl.jpg 1920w"></figure>
+</td>
+<td style="width: 49.943%;"> 
+<figure class="post__image align-center"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/2/IMG-20251120-WA0008.jpg" alt="" width="289" height="304" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0008-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0008-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0008-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0008-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0008-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0008-2xl.jpg 1920w"></figure>
+</td>
+</tr>
+</tbody>
+</table>
+<p>El sistema operativo era Ubuntu, asi que seguimos las instrucciones habituales para su configuración: idioma, región, Wi-Fi y creación de usuario:</p>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 49.943%;">
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/2/IMG-20251120-WA0011.jpg" alt="" width="1599" height="899" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0011-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0011-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0011-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0011-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0011-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0011-2xl.jpg 1920w"></figure>
+</td>
+<td style="width: 49.943%;">
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/2/IMG-20251120-WA0013.jpg" alt="" width="1599" height="899" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0013-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0013-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0013-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0013-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0013-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0013-2xl.jpg 1920w"></figure>
+</td>
+</tr>
+<tr>
+<td style="width: 49.943%;">
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/2/IMG-20251120-WA0012.jpg" alt="" width="1599" height="899" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0012-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0012-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0012-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0012-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0012-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0012-2xl.jpg 1920w"></figure>
+</td>
+<td style="width: 49.943%;">
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/2/IMG-20251120-WA0014.jpg" alt="" width="1599" height="899" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0014-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0014-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0014-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0014-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0014-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251120-WA0014-2xl.jpg 1920w"></figure>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Tras este proceso, nos hemos dirigido a la página <strong>NVIDIA Jetson AI Lab </strong>y hemos seguido las instrucciones que ofrecen para instalar el disco SSD en la Jetson, y así congifurarla para el uso de IA.</p>
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/2/IMG-20251127-WA0002.jpg" alt="" width="537" height="302" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0002-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0002-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0002-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0002-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0002-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0002-2xl.jpg 1920w"></figure>
+<p>Hemos abierto la terminal y ahí hemos ido copiando los comandos en el orden que indica la web.</p>
+<p>-<strong>lspci</strong>. Lista los distintos puertos PCI de la Jetson.</p>
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/2/IMG-20251127-WA0003.jpg" alt="" width="565" height="318" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0003-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0003-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0003-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0003-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0003-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0003-2xl.jpg 1920w"></figure>
+<p>-<strong>lsblk</strong>. Lista el nombre de los distintos dispositivos. El que corresponde al SSD, en nuestro caso fue nvme0n1.</p>
+<p>-<strong>sudo mkfs.ext4 /dev/nvme0n1</strong>. Formatea el SSD</p>
+<p>-<strong>sudo mkdir /ssd</strong>. Crea un punto de montaje.</p>
+<p>-<strong>sudo mount /dev/nvme0n1 /ssd</strong>. Monta el SSD.</p>
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/2/IMG-20251127-WA0004.jpg" alt="" width="566" height="318" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0004-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0004-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0004-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0004-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0004-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0004-2xl.jpg 1920w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/2/IMG-20251127-WA0005.jpg" alt="" width="563" height="317" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0005-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0005-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0005-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0005-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0005-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0005-2xl.jpg 1920w"></figure>
+<p>-<strong>lsblk -f</strong>. Nos indica el UUID (Identificador Único Universal) de nuestra SSD.</p>
+<p>-<strong>sudo vi /etc/fstab</strong>. Se crea una nueva entrada en el archivo fstab (File System Table), archivo de configuración que indica como se deben montar los sistemas y archivos al iniciar el sistema.</p>
+<p>-<strong>UUID=************-****-****-****-******** /ssd/ ext4 defaults 0 2</strong>. Insertamos esta línea, sustituyéndola con el UUID que obtuvimos anteriormente.</p>
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/2/IMG-20251127-WA0006.jpg" alt="" width="544" height="306" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0006-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0006-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0006-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0006-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0006-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0006-2xl.jpg 1920w"></figure>
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/2/IMG-20251127-WA0007.jpg" alt="" width="544" height="306" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0007-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0007-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0007-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0007-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0007-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0007-2xl.jpg 1920w"></figure>
+<p>-sudo chown ${USER}:${USER} /ssd. Cambia el dueño del directorio /ssd.</p>
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/2/IMG-20251127-WA0008.jpg" alt="" width="542" height="305" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0008-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0008-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0008-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0008-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0008-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0008-2xl.jpg 1920w"></figure>
+<p>Con esto quedaría configurada la Jetson Nano.</p>
+<p>Al acabar, comenzamos la instalación de LM Studio.</p>
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/2/IMG-20251127-WA0009.jpg" alt="" width="540" height="304" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0009-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0009-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0009-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0009-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0009-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0009-2xl.jpg 1920w"></figure>
+<p>Como el archivo descargado era un AppImage, tuvimos que dar permiso para ejecutarlo. Pese a ello, tuvimos un problema el cual no permitía iniciar la aplicación. Para solucionarlo tuvimos que abrir la terminal e insertar los siguientes comandos: <strong>sudo apt install libfuse2</strong> y <strong>sudo apt install fuse3.</strong></p>
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/2/IMG-20251127-WA0010.jpg" alt="" width="544" height="306" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0010-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0010-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0010-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0010-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0010-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0010-2xl.jpg 1920w"></figure>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 49.943%;">
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/2/IMG-20251127-WA0011.jpg" alt="" width="379" height="213" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0011-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0011-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0011-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0011-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0011-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0011-2xl.jpg 1920w"></figure>
+</td>
+<td style="width: 49.943%;">
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/2/IMG-20251127-WA0012.jpg" alt="" width="1920" height="1080" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0012-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0012-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0012-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0012-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0012-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0012-2xl.jpg 1920w"></figure>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Tras solucionarlo, pudimos iniciar LM Studio e hicimos unas primeras pruebas.</p>
+<figure class="post__image"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/2/IMG-20251127-WA0016.jpg" alt="" width="617" height="347" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0016-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0016-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0016-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0016-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0016-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/2/responsive/IMG-20251127-WA0016-2xl.jpg 1920w"></figure>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Configuración Raspberry Pi y Mac Mini</title>
         <author>
