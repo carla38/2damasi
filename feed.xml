@@ -3,7 +3,7 @@
     <title>DocumentacionASI</title>
     <link href="https://carla38.github.io/2damasi/feed.xml" rel="self" />
     <link href="https://carla38.github.io/2damasi" />
-    <updated>2026-01-18T18:33:12+01:00</updated>
+    <updated>2026-01-18T18:42:04+01:00</updated>
     <author>
         <name>Carla</name>
     </author>
@@ -20,12 +20,12 @@
         <updated>2026-01-18T18:33:12+01:00</updated>
             <summary>
                 <![CDATA[
-                    En esta tarea se documentará el proceso seguido para realizar la cuantización del modelo Qwen3-8B. Para la realizar este proceso, primero se le pidió a la IA una guía paso a paso en la que pudieramos apoyarnos y entender qué estábamos haciendo en cada momento.
+                    En esta tarea se documentará el proceso seguido para realizar la cuantización del modelo Qwen3-8B. Para realizar esta tarea, primero se le pidió a la IA una guía paso a paso en la que pudieramos apoyarnos y entender qué estábamos haciendo en cada momento. También&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p class="align-center">En esta tarea se documentará el proceso seguido para realizar la cuantización del modelo Qwen3-8B. Para la realizar este proceso, primero se le pidió a la IA una guía paso a paso en la que pudieramos apoyarnos y entender qué estábamos haciendo en cada momento. También hay que aclarar que hicimos esta práctica en Windows, ya que en el Mac Mini estábamos teniendo problemas con algunos de los comandos.</p>
+                <p class="align-center">En esta tarea se documentará el proceso seguido para realizar la cuantización del modelo Qwen3-8B. Para realizar esta tarea, primero se le pidió a la IA una guía paso a paso en la que pudieramos apoyarnos y entender qué estábamos haciendo en cada momento. También hay que aclarar que hicimos esta práctica en Windows, ya que en Mac estábamos teniendo problemas con algunos de los comandos.</p>
 <p> </p>
 <p class="align-center"><strong>Paso 1</strong></p>
 <p class="align-center">Lo primero fue crear la estructura de carpetas, en nuestro caso las creamos directamente desde la terminal usando el comando -mkdir:</p>
