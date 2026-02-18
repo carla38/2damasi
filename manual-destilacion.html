@@ -1,0 +1,174 @@
+<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Manual Destilación - DocumentacionASI</title><meta name="description" content="En esta práctica se redactará el proceso seguido para realizar la destilación de un modelo pequeño. En Inteligencia Artificial, la técnica de destilación consiste en transferir los conocimientos y aprendizaje de un modelo grande a uno pequeño. En nuestro caso usaremos como modelo pequeño Qwen&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://carla38.github.io/2damasi/manual-destilacion.html"><link rel="alternate" type="application/atom+xml" href="https://carla38.github.io/2damasi/feed.xml" title="DocumentacionASI - RSS"><link rel="alternate" type="application/json" href="https://carla38.github.io/2damasi/feed.json" title="DocumentacionASI - JSON"><meta property="og:title" content="Manual Destilación"><meta property="og:site_name" content="DocumentacionASI"><meta property="og:description" content="En esta práctica se redactará el proceso seguido para realizar la destilación de un modelo pequeño. En Inteligencia Artificial, la técnica de destilación consiste en transferir los conocimientos y aprendizaje de un modelo grande a uno pequeño. En nuestro caso usaremos como modelo pequeño Qwen&hellip;"><meta property="og:url" content="https://carla38.github.io/2damasi/manual-destilacion.html"><meta property="og:type" content="article"><link rel="stylesheet" href="https://carla38.github.io/2damasi/assets/css/style.css?v=7d5bbddb88a13bb0ad0ef21985ae0d0a"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://carla38.github.io/2damasi/manual-destilacion.html"},"headline":"Manual Destilación","datePublished":"2026-02-17T22:54+01:00","dateModified":"2026-02-18T01:08+01:00","description":"En esta práctica se redactará el proceso seguido para realizar la destilación de un modelo pequeño. En Inteligencia Artificial, la técnica de destilación consiste en transferir los conocimientos y aprendizaje de un modelo grande a uno pequeño. En nuestro caso usaremos como modelo pequeño Qwen&hellip;","author":{"@type":"Person","name":"Carla","url":"https://carla38.github.io/2damasi/authors/carla/"},"publisher":{"@type":"Organization","name":"Carla"}}</script><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript></head><body class="post-template"><header class="top js-header"><a class="logo" href="https://carla38.github.io/2damasi/">DocumentacionASI</a></header><main class="post"><article class="content"><div class="hero hero--noimage"><header class="hero__content"><div class="wrapper"><h1>Manual Destilación</h1><div class="feed__meta content__meta"><time datetime="2026-02-17T22:54" class="feed__date">February 17, 2026</time></div></div></header></div><div class="entry-wrapper content__entry"><p class="align-center">En esta práctica se redactará el proceso seguido para realizar la <strong>destilación </strong>de un modelo pequeño. En Inteligencia Artificial, la técnica de destilación consiste en <strong>transferir los conocimientos y aprendizaje de un modelo grande a uno pequeño</strong>. En nuestro caso usaremos como modelo pequeño <strong>Qwen 2.5 0.5B</strong>, y el modelo grande que le pasará sus conocimientos será <strong>Qwen 2.5 7B</strong>. Al final para comprobar el resultado de la destilación les pasaremos a ambos una serie de acertijos. Si la destilación ha sido exitosa, el modelo pequeño o alumno, sabrá responder algunos de ellos gracias a lo aprendido, aunque no más que el modelo profesor.</p><hr><h5 class="align-center"><strong>Paso 1</strong></h5><p class="align-center">- Se crea el directorio para el proyecto.</p><p class="align-center">- Se crea un entorno virtual en el que se realizará todo el proyecto.</p><p class="align-center">-Se instalan las librerías necesarias.</p><figure class="post__image"><img loading="lazy" src="https://carla38.github.io/2damasi/media/posts/8//IMG-20260206-WA0003.jpg" alt="" width="1599" height="899" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/8//responsive/IMG-20260206-WA0003-xs.jpg 640w, https://carla38.github.io/2damasi/media/posts/8//responsive/IMG-20260206-WA0003-sm.jpg 768w, https://carla38.github.io/2damasi/media/posts/8//responsive/IMG-20260206-WA0003-md.jpg 1024w, https://carla38.github.io/2damasi/media/posts/8//responsive/IMG-20260206-WA0003-lg.jpg 1366w, https://carla38.github.io/2damasi/media/posts/8//responsive/IMG-20260206-WA0003-xl.jpg 1600w, https://carla38.github.io/2damasi/media/posts/8//responsive/IMG-20260206-WA0003-2xl.jpg 1920w"></figure><p class="align-center"> </p><h5 class="align-center"><strong>Paso 2</strong></h5><p class="align-center">Se crea el script que cargará el modelo grande y que contendrá los acertijos con los que se entrenará al modelo pequeño mediante las respuestas que genere el grande. Después se ejecuta con <strong>python generar_datos.py</strong> para comenzar el proceso de destilación. Los datos resultantes se guardarán en el archivo <strong>train.jsonl</strong>.</p><p class="align-center"><span style="text-decoration: underline;">Contenido del script:</span></p><pre class="language-apacheconf"><code>from mlx_lm import load, generate
+import json
+
+# Modelo Profesor (Versión optimizada para Mac que no requiere login)
+modelo_profesor = "mlx-community/Qwen2.5-7B-Instruct-4bit"
+
+# Lista de 50 acertijos para el entrenamiento
+acertijos = [
+    "Oro parece, plata no es. Quien no lo adivine, bien tonto es.",
+    "Blanca por dentro, verde por fuera. Si quieres que te lo diga, espera.",
+    "Tiene dientes y no come, tiene cabeza y no es hombre.",
+    "Dos compañeros van al compás, con los pies delante y los ojos detrás.",
+    "Lana sube, lana baja. ¿Qué es?",
+    "Tiene dientes y no come, tiene cabeza y no es hombre.",
+    "Soy bonito por delante y algo feo por detrás, me transformo a cada instante ya que imito a los demás.",
+    "Canto en la orilla, vivo en el agua, no soy pescado ni soy cigarra.",
+    "Vuelo de noche, duermo de día y nunca verás plumas en el ala mía.",
+    "Choco me dice la gente, late mi corazón. El que no sepa mi nombre, es un gran tontorrón.",
+    "En alto vive, en alto mora, en alto teje la tejedora.",
+    "Sal al campo por las noches si me quieres conocer, soy señor de grandes ojos, cara seria y gran saber.",
+    "Todo el mundo lo lleva, todo el mundo lo tiene, porque a todos les dan uno en cuanto al mundo vienen.",
+    "Si me nombras, desaparezco. ¿Quién soy?",
+    "Tengo ciudades, pero no casas. Tengo montañas, pero no árboles. Tengo agua, pero no peces. ¿Qué soy?",
+    "Siempre estoy llegando, pero nunca llego. ¿Qué soy?",
+    "Tengo cuello, pero no cabeza. ¿Qué soy?",
+    "Solo tengo un color, pero puedo tener muchos tamaños. Me pego al sol, pero desaparezco bajo la lluvia. ¿Qué soy?",
+    "Cuanto más le quitas, más grande se hace. ¿Qué es?",
+    "¿Qué se moja mientras seca?",
+    "Te pertenezco, pero los demás me usan más que tú. ¿Qué soy?",
+    "Tengo llaves pero no cerraduras. Tengo espacio pero no habitaciones. Puedes entrar pero no salir. ¿Qué soy?",
+    "¿Qué tiene manos pero no puede aplaudir?",
+    "Tiene un ojo pero no puede ver.",
+    "¿Qué tiene piernas pero no puede caminar?",
+    "Sube y baja pero no se mueve.",
+    "¿Qué hay que romper antes de poder usarlo?",
+    "Soy alto cuando soy joven y bajo cuando soy viejo. ¿Qué soy?",
+    "¿Qué mes tiene 28 días?",
+    "¿Qué está lleno de agujeros pero aún así retiene agua?",
+    "¿Qué pregunta nunca puedes contestar con un 'sí'?",
+    "¿Qué va hacia arriba y nunca baja?",
+    "Tengo 4 patas por la mañana, 2 por la tarde y 3 por la noche. ¿Quién soy?",
+    "Cruza ríos y mares sin mojarse.",
+    "Entra al agua y no se moja, entra al fuego y no se quema.",
+    "Un platito de avellanas que de día se recogen y de noche se derraman.",
+    "Es pequeña como una pera, pero alumbra la casa entera.",
+    "Tengo copa y no soy árbol, tengo alas y no soy pájaro.",
+    "Soy redonda como el mundo, al morir me despedazan; me reducen a pellejo y todo el jugo me sacan.",
+    "Cabeza de hierro, cuerpo de madera, si te piso un dedo, ¡menudo grito pegas!",
+    "No es cama ni es león, y desaparece en cualquier rincón.",
+    "Te la digo, te la digo, te la vuelvo a repetir; te la digo veinte veces y no la sabes decir.",
+    "Tul y no es tela, pan, pero no de mesa.",
+    "En un cuarto me arrinconan sin acordarse de mí, pero pronto van a buscarme cuando tienen que subir.",
+    "Pito pasó por aquí, Pito pasó por allá...",
+    "¿Qué es algo que, aunque sea tuyo, la gente lo usa más que tú?",
+    "Si soy joven, joven quedo. Si soy viejo, viejo quedo. Tengo boca y no hablo, tengo ojos y no veo. ¿Qué soy?",
+    "Redondo, redondo, barril sin fondo.",
+    "Soy ave y no vuelo, soy llana y no piso. ¿Qué soy?",
+    "Nazco sin padre, muero sin madre. ¿Qué soy?"
+]
+
+print(f"--- INICIANDO PROCESO DE DESTILACIÓN ---")
+print(f"Cargando al Profesor: {modelo_profesor}...")
+model, tokenizer = load(modelo_profesor)
+
+dataset_entrenamiento = []
+
+print(f"Generando soluciones maestras...")
+for i, acertijo in enumerate(acertijos):
+    # Formato ChatML para Qwen
+    prompt = f"&lt;|im_start|&gt;user\nResuelve este acertijo: {acertijo}&lt;|im_end|&gt;\n&lt;|im_start|&gt;assistant\n"
+    response = generate(model, tokenizer, prompt=prompt, max_tokens=100, verbose=False)
+    
+    # Guardamos par Pregunta-Respuesta
+    data_entry = {
+        "messages": [
+            {"role": "user", "content": f"Resuelve este acertijo: {acertijo}"},
+            {"role": "assistant", "content": response.strip()}
+        ]
+    }
+    dataset_entrenamiento.append(data_entry)
+    print(f"[{i+1}/{len(acertijos)}] Procesado.")
+
+# Guardar JSONL
+with open('train.jsonl', 'w', encoding='utf-8') as f:
+    for entry in dataset_entrenamiento:
+        json.dump(entry, f, ensure_ascii=False)
+        f.write('\n')
+
+print("\n¡ÉXITO! Datos guardados en 'train.jsonl'.")
+</code></pre><figure class="post__image"><img loading="lazy" src="https://carla38.github.io/2damasi/media/posts/8//IMG-20260206-WA0004-3.jpg" alt="" width="1599" height="899" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/8//responsive/IMG-20260206-WA0004-3-xs.jpg 640w, https://carla38.github.io/2damasi/media/posts/8//responsive/IMG-20260206-WA0004-3-sm.jpg 768w, https://carla38.github.io/2damasi/media/posts/8//responsive/IMG-20260206-WA0004-3-md.jpg 1024w, https://carla38.github.io/2damasi/media/posts/8//responsive/IMG-20260206-WA0004-3-lg.jpg 1366w, https://carla38.github.io/2damasi/media/posts/8//responsive/IMG-20260206-WA0004-3-xl.jpg 1600w, https://carla38.github.io/2damasi/media/posts/8//responsive/IMG-20260206-WA0004-3-2xl.jpg 1920w"></figure><figure class="post__image"><img loading="lazy" src="https://carla38.github.io/2damasi/media/posts/8//IMG-20260206-WA0006.jpg" alt="" width="1599" height="899" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/8//responsive/IMG-20260206-WA0006-xs.jpg 640w, https://carla38.github.io/2damasi/media/posts/8//responsive/IMG-20260206-WA0006-sm.jpg 768w, https://carla38.github.io/2damasi/media/posts/8//responsive/IMG-20260206-WA0006-md.jpg 1024w, https://carla38.github.io/2damasi/media/posts/8//responsive/IMG-20260206-WA0006-lg.jpg 1366w, https://carla38.github.io/2damasi/media/posts/8//responsive/IMG-20260206-WA0006-xl.jpg 1600w, https://carla38.github.io/2damasi/media/posts/8//responsive/IMG-20260206-WA0006-2xl.jpg 1920w"></figure><figure class="post__image"><img loading="lazy" src="https://carla38.github.io/2damasi/media/posts/8//IMG-20260206-WA0005.jpg" alt="" width="1599" height="899" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/8//responsive/IMG-20260206-WA0005-xs.jpg 640w, https://carla38.github.io/2damasi/media/posts/8//responsive/IMG-20260206-WA0005-sm.jpg 768w, https://carla38.github.io/2damasi/media/posts/8//responsive/IMG-20260206-WA0005-md.jpg 1024w, https://carla38.github.io/2damasi/media/posts/8//responsive/IMG-20260206-WA0005-lg.jpg 1366w, https://carla38.github.io/2damasi/media/posts/8//responsive/IMG-20260206-WA0005-xl.jpg 1600w, https://carla38.github.io/2damasi/media/posts/8//responsive/IMG-20260206-WA0005-2xl.jpg 1920w"></figure><figure class="post__image"><img loading="lazy" src="https://carla38.github.io/2damasi/media/posts/8/IMG-20260206-WA0008.jpg" alt="" width="1599" height="899" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/8/responsive/IMG-20260206-WA0008-xs.jpg 640w, https://carla38.github.io/2damasi/media/posts/8/responsive/IMG-20260206-WA0008-sm.jpg 768w, https://carla38.github.io/2damasi/media/posts/8/responsive/IMG-20260206-WA0008-md.jpg 1024w, https://carla38.github.io/2damasi/media/posts/8/responsive/IMG-20260206-WA0008-lg.jpg 1366w, https://carla38.github.io/2damasi/media/posts/8/responsive/IMG-20260206-WA0008-xl.jpg 1600w, https://carla38.github.io/2damasi/media/posts/8/responsive/IMG-20260206-WA0008-2xl.jpg 1920w"></figure><p class="align-center"> </p><h5 class="align-center"><strong>Paso 3</strong></h5><p class="align-center">Se crea el dataset de validación duplicando el archivo de entrenamiento (<strong>cp train.jsonl valid.jsnl)</strong>. Este paso es necesario ya que si no MLX dará error.</p><p class="align-center">Se inicia el entrenamiento usando <strong>LoRA (Low-Rank Adaptation)</strong>. El entrenamiento tendrá 200 iteraciones.</p><figure class="post__image"><img loading="lazy" src="https://carla38.github.io/2damasi/media/posts/8/IMG-20260206-WA0009.jpg" alt="" width="1599" height="899" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/8/responsive/IMG-20260206-WA0009-xs.jpg 640w, https://carla38.github.io/2damasi/media/posts/8/responsive/IMG-20260206-WA0009-sm.jpg 768w, https://carla38.github.io/2damasi/media/posts/8/responsive/IMG-20260206-WA0009-md.jpg 1024w, https://carla38.github.io/2damasi/media/posts/8/responsive/IMG-20260206-WA0009-lg.jpg 1366w, https://carla38.github.io/2damasi/media/posts/8/responsive/IMG-20260206-WA0009-xl.jpg 1600w, https://carla38.github.io/2damasi/media/posts/8/responsive/IMG-20260206-WA0009-2xl.jpg 1920w"></figure><figure class="post__image"><img loading="lazy" src="https://carla38.github.io/2damasi/media/posts/8/IMG-20260206-WA0010.jpg" alt="" width="1599" height="899" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/8/responsive/IMG-20260206-WA0010-xs.jpg 640w, https://carla38.github.io/2damasi/media/posts/8/responsive/IMG-20260206-WA0010-sm.jpg 768w, https://carla38.github.io/2damasi/media/posts/8/responsive/IMG-20260206-WA0010-md.jpg 1024w, https://carla38.github.io/2damasi/media/posts/8/responsive/IMG-20260206-WA0010-lg.jpg 1366w, https://carla38.github.io/2damasi/media/posts/8/responsive/IMG-20260206-WA0010-xl.jpg 1600w, https://carla38.github.io/2damasi/media/posts/8/responsive/IMG-20260206-WA0010-2xl.jpg 1920w"></figure><p class="align-center"> </p><h5 class="align-center"><strong>Prueba Final</strong></h5><p class="align-center">Se crea un script (<strong>prueba_final.py</strong>) que cargará al modelo alumno para que resuelva una serie de acertijos nuevos, incluidos en el script, y al modelo profesor para que valide las respuestas del alumno. </p><p class="align-center"><span style="text-decoration: underline;">Contenido del script</span>:</p><pre class="language-apacheconf"><code>import gc
+import re
+from mlx_lm import load, generate
+
+# Configuración
+modelo_profesor = "mlx-community/Qwen2.5-7B-Instruct-4bit"
+modelo_alumno = "Qwen/Qwen2.5-0.5B"
+ruta_adaptadores = "adapters"
+
+acertijos_nuevos = [
+    "Tengo hojas y no soy árbol, tengo lomo y no soy caballo. ¿Qué soy?",
+    "Una señora muy aseñorada, que lo escucha todo y no entiende nada. ¿Qué es?",
+    "Soy pequeño y de madera, y si me rozas la cabeza, enciendo la hoguera. ¿Qué soy?",
+    "Cae de la torre y no se mata, cae en el agua y se desbarata. ¿Qué es?",
+    "Tengo cadenas sin ser preso, si me empujas voy y vengo. ¿Qué soy?",
+    "Sube llena y baja vacía, y si no se da prisa, la sopa se enfría. ¿Qué es?",
+    "Bramido a bramido, antes de las tormentas, todos lo hemos oído. ¿Qué es?",
+    "Una vieja con un diente, que llama a toda la gente. ¿Qué es?",
+    "Lleva años en el mar y aún no sabe nadar. ¿Qué es?",
+    "Dos pinzas tengo, hacia atrás camino, de mar o de río, en el agua vivo. ¿Qué soy?"
+]
+
+respuestas_alumno = []
+notas = []
+
+print("\n--- FASE 1: EL EXAMEN DEL ALUMNO ---")
+model_s, tok_s = load(modelo_alumno, adapter_path=ruta_adaptadores)
+
+for i, acertijo in enumerate(acertijos_nuevos):
+    prompt = f"&lt;|im_start|&gt;user\nResuelve este acertijo: {acertijo}&lt;|im_end|&gt;\n&lt;|im_start|&gt;assistant\n"
+    # Max tokens 100 para permitir respuestas completas
+    response = generate(model_s, tok_s, prompt=prompt, max_tokens=100, verbose=False)
+    respuestas_alumno.append(response.strip())
+    print(f"📝 Pregunta {i+1} respondida.")
+
+# Limpieza de memoria
+del model_s
+del tok_s
+gc.collect()
+
+print("\n--- FASE 2: EL PROFESOR CALIFICA ---")
+model_t, tok_t = load(modelo_profesor)
+
+for i, acertijo in enumerate(acertijos_nuevos):
+    resp_alumno = respuestas_alumno[i]
+    
+    # Prompt de Juez
+    prompt_juez = f"""&lt;|im_start|&gt;user
+Evalúa si la respuesta contiene la solución correcta al acertijo.
+Acertijo: "{acertijo}"
+Respuesta Alumno: "{resp_alumno}"
+
+Si es correcta, responde SOLO con el número 10.
+Si es incorrecta, responde SOLO con el número 0.
+&lt;|im_end|&gt;
+&lt;|im_start|&gt;assistant
+"""
+    calif = generate(model_t, tok_t, prompt=prompt_juez, max_tokens=10, verbose=False)
+    
+    # Extracción de nota
+    try:
+        numeros = re.findall(r'\d+', calif)
+        es_acierto = 1 if (numeros and int(numeros[0]) &gt; 5) else 0
+    except: es_acierto = 0
+    notas.append(es_acierto)
+
+# Resultados
+print(f"\n📊 NOTA FINAL: {sum(notas)}/10  ({(sum(notas)/10)*100}%)")
+print("-" * 40)
+for i, r in enumerate(respuestas_alumno):
+    icon = "✅" if notas[i]==1 else "❌"
+    print(f"\n{icon} PREGUNTA: {acertijos_nuevos[i]}")
+    print(f"   RESPUESTA: {r}")
+</code></pre><p class="align-center">Como se puede ver en la captura, el modelo alumno ha sido capaz de responder correctamente 5 acertijos de 10.</p><figure class="post__image"><img loading="lazy" src="https://carla38.github.io/2damasi/media/posts/8/IMG-20260206-WA0013.jpg" alt="" width="1599" height="899" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/8/responsive/IMG-20260206-WA0013-xs.jpg 640w, https://carla38.github.io/2damasi/media/posts/8/responsive/IMG-20260206-WA0013-sm.jpg 768w, https://carla38.github.io/2damasi/media/posts/8/responsive/IMG-20260206-WA0013-md.jpg 1024w, https://carla38.github.io/2damasi/media/posts/8/responsive/IMG-20260206-WA0013-lg.jpg 1366w, https://carla38.github.io/2damasi/media/posts/8/responsive/IMG-20260206-WA0013-xl.jpg 1600w, https://carla38.github.io/2damasi/media/posts/8/responsive/IMG-20260206-WA0013-2xl.jpg 1920w"></figure></div></article></main><footer class="footer"><div class="wrapper"><div class="footer__copyright"><p>DocumentacionASI - Carla Arribas</p></div><button id="backToTop" class="footer__bttop" aria-label="Back to top" title="Back to top"><svg width="20" height="20"><use xlink:href="https://carla38.github.io/2damasi/assets/svg/svg-map.svg#toparrow"/></svg></button></div></footer><script defer="defer" src="https://carla38.github.io/2damasi/assets/js/scripts.min.js?v=700105c316933a8202041b6415abb233"></script><script>window.publiiThemeMenuConfig={mobileMenuMode:'sidebar',animationSpeed:300,submenuWidth: 'auto',doubleClickTime:500,mobileMenuExpandableSubmenus:true,relatedContainerForOverlayMenuSelector:'.top'};</script><script>var images = document.querySelectorAll('img[loading]');
+        for (var i = 0; i < images.length; i++) {
+            if (images[i].complete) {
+                images[i].classList.add('is-loaded');
+            } else {
+                images[i].addEventListener('load', function () {
+                    this.classList.add('is-loaded');
+                }, false);
+            }
+        }</script></body></html>
