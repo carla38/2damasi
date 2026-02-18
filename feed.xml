@@ -3,7 +3,7 @@
     <title>DocumentacionASI</title>
     <link href="https://carla38.github.io/2damasi/feed.xml" rel="self" />
     <link href="https://carla38.github.io/2damasi" />
-    <updated>2026-02-18T12:03:57+01:00</updated>
+    <updated>2026-02-18T12:12:29+01:00</updated>
     <author>
         <name>Carla</name>
     </author>
@@ -425,7 +425,7 @@ for i, r in enumerate(respuestas_alumno):
         <content type="html">
             <![CDATA[
                 <p class="align-center">En esta tarea se documentará el proceso seguido para realizar la cuantización del modelo <strong>Qwen3-8B</strong>. Para realizar esta tarea, primero se le pidió a la IA una guía paso a paso en la que pudieramos apoyarnos y entender qué estábamos haciendo en cada momento. También hay que aclarar que hicimos esta práctica en Windows, ya que en Mac estábamos teniendo problemas con algunos de los comandos.</p>
-<p> </p>
+<p class="align-center"> </p>
 <p class="align-center"><strong>Paso 1</strong></p>
 <p class="align-center">Lo primero fue crear la estructura de carpetas, en nuestro caso las creamos directamente desde la terminal usando el comando <strong>-mkdir</strong>:</p>
 <figure class="post__image align-center"><img loading="lazy"  src="https://carla38.github.io/2damasi/media/posts/4/IMG-20260115-WA0006.jpg" alt="" width="466" height="387" sizes="(max-width: 1920px) 100vw, 1920px" srcset="https://carla38.github.io/2damasi/media/posts/4/responsive/IMG-20260115-WA0006-xs.jpg 640w ,https://carla38.github.io/2damasi/media/posts/4/responsive/IMG-20260115-WA0006-sm.jpg 768w ,https://carla38.github.io/2damasi/media/posts/4/responsive/IMG-20260115-WA0006-md.jpg 1024w ,https://carla38.github.io/2damasi/media/posts/4/responsive/IMG-20260115-WA0006-lg.jpg 1366w ,https://carla38.github.io/2damasi/media/posts/4/responsive/IMG-20260115-WA0006-xl.jpg 1600w ,https://carla38.github.io/2damasi/media/posts/4/responsive/IMG-20260115-WA0006-2xl.jpg 1920w"></figure>
